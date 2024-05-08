@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 
 const ContactList = ({contacts}) => {
@@ -14,7 +15,7 @@ const ContactList = ({contacts}) => {
 			</thead>
 			<tbody>
 				{contacts.map(contact => (
-					<tr key = {contact.id}>
+					<tr key={contact.id}>
 						<td>{contact.firstName}</td>
 						<td>{contact.lastName}</td>
 						<td>{contact.email}</td>
