@@ -45,4 +45,4 @@ const ContactList = ({ contacts, updateContact, updateCallback }) => {
 	</div>
 }
 
-export default ContactList
+export default ContactList;
