@@ -1,12 +1,12 @@
 import React from "react";
 
-const ContactList = ({contacts, updateContact, updateCallback}) => {
+const ContactList = ({ contacts, updateContact, updateCallback }) => {
 	const onDelete = async (id) => {
 		try {
 			const options = {
 				method: "DELETE"
 			}
-			const response = await fetch(`http://127.0.0.1:5000/delete_contact/${id}`, options);
+			const response = await fetch(`http://127.0.0.1:5000/delete_contact/${id}`, options)
 			if (response.status === 200) {
 				updateCallback()
 			} else {
@@ -43,6 +43,6 @@ const ContactList = ({contacts, updateContact, updateCallback}) => {
 			</tbody>
 		</table>
 	</div>
-};
+}
 
-export default ContactList;
+export default ContactList
